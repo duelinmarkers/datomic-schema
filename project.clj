@@ -1,4 +1,4 @@
-(defproject com.duelinmarkers/datomic-schema "0.1.0"
+(defproject com.duelinmarkers/datomic-schema "0.1.1-SNAPSHOT"
   :description "convenient fns for building up a datomic schema"
   :url "http://github.com/duelinmarkers/datomic-schema"
   :license {:name "Eclipse Public License"
