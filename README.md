@@ -7,7 +7,7 @@ A Clojure library providing convenient fns for building up a datomic schema.
     (require '[com.duelinmarkers.datomic-schema :as dschema]
              '[datomic.api :as d])
     
-    (d/transact [
+    (d/transact conn [ ; assuming conn is a datomic connection
       (dschema/attribute :widget/name :db.type/string :db/fullText :db.unique/identity "The name")
       (dschema/attribute :widget/price :db.type/bigdec "The unit price")
       (dschema/attribute :widget/type :db.type/ref)
